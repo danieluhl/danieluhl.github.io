@@ -159,7 +159,6 @@
     <a target="rel" href="https://www.facebook.com/sri.ramya" class="giant">R</a>amya <span class="giant">&</span> <a target="rel" href="https://www.facebook.com/daniel.uhl.79" class="giant">D</a>an: 
     <span class="tagline" contentEditable="true">Back to SoCal!</span>
     </h1>
-    <h3 class="lato h4 txtRight">(click to edit)</h3>
     <ul>
 
     </ul>
@@ -217,7 +216,7 @@ src="https://www.google.com/maps/embed/v1/place?q=Amber%20Palace%2C%20Jaipur%2C%
         'The Secret Wedding',
         'One dream can change the world',
         'What could go wrong?',
-        'Back to SoCal'
+        'Back to SoCal!'
       ];
 
       var $tagline = $('.tagline');
@@ -232,7 +231,6 @@ src="https://www.google.com/maps/embed/v1/place?q=Amber%20Palace%2C%20Jaipur%2C%
         taglineIndex = (taglineIndex + 1)%(taglines.length + 1);
       }, 8000);
 
-      $tagline.focus();
       $(document).on('click', '.tagline', function(){
         clearInterval(rotateInterval);
       });
