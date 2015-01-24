@@ -15,9 +15,6 @@
         font-family: 'Tangerine', cursive;
         font-weight: 200;
       }
-      .tangerine_light {
-        font-weight: 200;
-      }
 
 
       /* Colors */
@@ -38,6 +35,7 @@
       .whiteSwatch .swatch {
         background: #f9eff1;
         color: #fb768b;
+        border-radius: 99999px;
       }
       html {
         background: #f6f7f8;
@@ -49,6 +47,9 @@
       }
       h2 {
         font-size: 4em;
+      }
+      .h3 {
+        font-size: 3em;
       }
       .giant {
         font-size: 1.7em;
@@ -66,6 +67,7 @@
       ul {
         margin: 0;
         padding: 0;
+        display: inline-block;
       }
       li {
         list-style-type: none;
@@ -74,7 +76,7 @@
       .swatchWrapper {
         width: 44%;
         padding: 3%;
-        display: block;
+        display: inline-block;
         float: left;
         background: #f9eff1;
       }
@@ -92,18 +94,47 @@
         text-decoration: line-through;
       }
 
-      /* modifiers */
+      /* grid */
+      .full {
+        width: 100%;
+      }
 
+      .kvp {
+        width: 100%;
+
+      }
+      .kvp li {
+        width: 100%;
+        display: inline-block;
+      }
+      .kvp li label {
+        width: 17%;
+        display: inline-block;
+        padding: 2% 2% 1% 1%;
+        background: #fb768b;
+        color: #f9eff1;
+      }
+      .kvp li span {
+        width: 75%;
+        display: inline-block;
+        background: #f9eff1;
+        color: #fb768b;
+        padding: 1% 2% 2% 1%;
+      }
+
+      footer {
+        padding: 5em;
+      }
     </style>
   </head>
   <body>
-    <h1 class="tangerine tangerine_light"><span class="giant">R</span>amya <span class="giant">&</span> <span class="giant">D</span>an: What could go wrong?</h1>
+    <h1 class="tangerine"><span class="giant">R</span>amya <span class="giant">&</span> <span class="giant">D</span>an: What could go wrong?</h1>
     <ul>
 
     </ul>
 
     <h2 class="tangerine">Primary <span class="cross">Mistakes</span> Colors</h2>
-    <ul>
+    <ul class="full">
       <li class="pinkSwatch swatchWrapper lato">
         <ul class="swatch">
           <li>pink</li>
@@ -117,5 +148,25 @@
         </ul>
       </li>
     </ul>
+
+    <h2 class="tangerine">Good to Know</h2>
+    <ul class="kvp tangerine h3">
+      <li><label>Wat?</label><span>We're getting married!</span></li>
+      <li><label>When</label><span>Should stop making this website and figure this out</span></li>
+      <li><label>Where</label><span>Kinda depends on when</span></li>
+      <li><label>Who's Coming</label><span>Did you get an invite? Then you can come.</span></li>
+    </ul>
+
+
+    <h2 class="tangerine">Map</h2>
+    <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=paris%20france&key=AIzaSyBwfExwIGKcoIFhBnTMjWl23VyFyA1iQQg"></iframe>
+    
+    <footer></footer>
   </body>
   </html>
+
+
+
+
+
+
