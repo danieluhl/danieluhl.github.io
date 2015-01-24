@@ -1,17 +1,121 @@
-
-
-
-
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Ramya & Dan Wedding</title>
-</head>
-<body>
-<h1>Ramya & Dan's Wedding Website</h1>
-</body>
-</html>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,400|Tangerine:200,400' rel='stylesheet' type='text/css'>
+    <style>
 
 
+      /* fonts */
+      .lato {
+        font-family: 'Lato', sans-serif;
+        font-weight: 100;
+      }
+      .tangerine {
+        font-family: 'Tangerine', cursive;
+        font-weight: 200;
+      }
+      .tangerine_light {
+        font-weight: 200;
+      }
 
 
+      /* Colors */
+      .lightPink {
+        color: #fb768b;
+      }
+      .darkPink {
+        color: #fb768b;
+      }
+      .swatch {
+        width: 80%;
+        padding: 10%;
+      }
+      .pinkSwatch .swatch {
+        background: #fb768b;
+        color: #f9eff1 ;
+      }
+      .whiteSwatch .swatch {
+        background: #f9eff1;
+        color: #fb768b;
+      }
+      html {
+        background: #f6f7f8;
+      }
+
+      /* fonts */
+      h1 {
+        font-size: 6em;
+      }
+      h2 {
+        font-size: 4em;
+      }
+      .giant {
+        font-size: 1.7em;
+      }
+
+      /* elements */
+      body{
+        position: relative;
+        left: 50%;
+        width: 90%;
+        padding: 1% 5%;
+        transform: translate(-50%,0%);
+        color: #fb768b;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        list-style-type: none;
+      }
+
+      .swatchWrapper {
+        width: 44%;
+        padding: 3%;
+        display: block;
+        float: left;
+        background: #f9eff1;
+      }
+      .whiteSwatch {
+        background: #fb768b;
+      }
+
+      .swatch {
+        min-height: 400px;
+        display: block;
+        float: left;
+        font-size: 7em;
+      }
+      .cross {
+        text-decoration: line-through;
+      }
+
+      /* modifiers */
+
+    </style>
+  </head>
+  <body>
+    <h1 class="tangerine tangerine_light"><span class="giant">R</span>amya <span class="giant">&</span> <span class="giant">D</span>an: What could go wrong?</h1>
+    <ul>
+
+    </ul>
+
+    <h2 class="tangerine">Primary <span class="cross">Mistakes</span> Colors</h2>
+    <ul>
+      <li class="pinkSwatch swatchWrapper lato">
+        <ul class="swatch">
+          <li>pink</li>
+          <li>#fb768b</li>
+        </ul>
+      </li>
+      <li class="whiteSwatch swatchWrapper lato">
+        <ul class="swatch">
+          <li>white</li>
+          <li>#f9fff0</li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+  </html>
