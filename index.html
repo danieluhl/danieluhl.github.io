@@ -77,6 +77,8 @@
         width: 90%;
         padding: 1% 5%;
         transform: translate(-50%,0%);
+        -webkit-transform: translate(-50%,0%);
+        -mos-transform: translate(-50%,0%);
         color: #fb768b;
       }
       ul {
@@ -152,6 +154,20 @@
       .txtRight {
         text-align: right;
       }
+      .colorIn {
+        font-size: 4em;
+        width: 3em;
+      }
+      .colorButton {
+        margin-left: 1em;
+      }
+      .colorResult {
+        color: #fff;
+        display: block;
+        margin: 5% 0;
+        width: 90%;
+        padding: 5%;
+      }
     </style>
   </head>
   <body>
@@ -207,14 +223,19 @@ src="https://www.google.com/maps/embed/v1/place?q=Amber%20Palace%2C%20Jaipur%2C%
 
     <h2 class="tangerine"><span class="giant">D</span>an's <span class="giant">C</span>olor <span class="giant">F</span>ormula</h2>
     <ol class="h4 lato">
-    <li><p>Need 3 hex digits to represent a color and "R&D"</p></li>
-    <li><p>Convert R&D to ascii codes: "R".charCodeAt(0) = 82...</p></li>
-    <li><p>Convert those to hex: .toString(16)...</p></li>
-    <li><p>Result: "R".charCodeAt(0).toString(16) + 
-    "&".charCodeAt(0).toString(16) + 
-    "D".charCodeAt(0).toString(16) = #522644</p></li>
-    <li class="giant" style="background: #522644; text-align: center">Which looks like this!!!!!</li>
+      <li><p>Need 3 hex digits to represent a color and "R&D"</p></li>
+      <li><p>Convert R&D to ascii codes: "R".charCodeAt(0) = 82...</p></li>
+      <li><p>Convert those to hex: .toString(16)...</p></li>
+      <li><p>Result: "R".charCodeAt(0).toString(16) + 
+      "&".charCodeAt(0).toString(16) + 
+      "D".charCodeAt(0).toString(16) = #522644</p></li>
+      <li class="giant" style="background: #522644; text-align: center">Which looks like this!!!!!</li>
     </ol>
+
+    <h2 class="tangerine"><span class="giant">Y</span>our <span class="giant">C</span>olor</h2>
+    <p class="lato h4">If your initials (_&_) come out to a shade of purple, you belong at our wedding!</p>
+    <input type="text" class="colorIn" maxlength="3" /><button class="go h3 lato colorButton">Generate!</button>
+    <span class="h4 lato colorResult"></span>
 
     <footer><small class="lato">&copy 2015-forevzies RamyaDan, Inc. All Rights Reserved.</small></footer>
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
@@ -244,6 +265,21 @@ src="https://www.google.com/maps/embed/v1/place?q=Amber%20Palace%2C%20Jaipur%2C%
 
       $(document).on('click', '.tagline', function(){
         clearInterval(rotateInterval);
+      });
+
+      $(document).on('click', '.colorButton', function(){
+        var text = $('.colorIn').val();
+        var result = '#';
+        for(var i = 0; i < text.length; i++){
+          result = result + text.charCodeAt(i).toString(16);
+        }
+        $('.colorResult').css('background', result).html(result);
+      });
+
+      $('.colorIn').keyup(function(event){
+        if(event.keyCode == 13){
+          $('.colorButton').click();
+        }
       });
     });
 
