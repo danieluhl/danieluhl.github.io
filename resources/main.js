@@ -59,12 +59,4 @@ $(function(){
   });
 
 
-  // show buttons based on device
-  var ua = navigator.userAgent.toLowerCase();
-  var isAndroid = ua.indexOf("android") > -1;
-  if(isAndroid) {
-    $('.map-android').show();
-  } else {
-    $('.map-apple').show();
-  }
 });
