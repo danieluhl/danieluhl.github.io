@@ -1,0 +1,180 @@
+/* fonts */
+.lato {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+.tangerine {
+  font-family: 'Tangerine', cursive;
+  font-weight: 400;
+}
+
+
+
+
+/* Colors */
+.lightPink {
+  color: #fb768b;
+}
+.darkPink {
+  color: #fb768b;
+}
+.swatch {
+  width: 80%;
+  padding: 10%;
+}
+.pinkSwatch .swatch {
+  background: #fb768b;
+  color: #f9eff1 ;
+}
+.whiteSwatch .swatch {
+  background: #f9eff1;
+  color: #fb768b;
+}
+html {
+  background: #f6f7f8;
+}
+
+a {
+  text-decoration: none;
+  color: #fb768b;
+}
+a:visited {
+  color: #fb768b;
+}
+h1 {
+  font-size: 6em;
+  margin: 1em 0 0 0;
+}
+h2 {
+  margin-top: 2em;
+  font-size: 5em;
+}
+.h3 {
+  font-size: 3em;
+}
+.h4 {
+  font-size: 2em;
+}
+.giant {
+  font-size: 1.7em;
+}
+a.giant {
+  box-shadow: 0 1px 2px rgba(251, 118, 139, .8);
+  padding: 0 .1em;
+}
+
+
+
+/* elements */
+body{
+  position: relative;
+  left: 50%;
+  width: 90%;
+  padding: 1% 5%;
+  transform: translate(-50%,0%);
+  -webkit-transform: translate(-50%,0%);
+  -mos-transform: translate(-50%,0%);
+  color: #fb768b;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+li {
+  list-style-type: none;
+}
+
+.swatchWrapper {
+  width: 44%;
+  padding: 3%;
+  display: inline-block;
+  float: left;
+  background: #f9eff1;
+}
+.whiteSwatch {
+  background: #fb768b;
+}
+
+.swatch {
+  min-height: 400px;
+  display: block;
+  float: left;
+  font-size: 7em;
+}
+.cross {
+  text-decoration: line-through;
+}
+
+/* grid */
+.full {
+  width: 100%;
+}
+
+.kvp {
+  width: 100%;
+  background: #F9EFF1;
+}
+.kvp li {
+  width: 100%;
+  display: flex;
+  font-size: .6em;
+  font-family: 'Lato', sans-serif;
+}
+.kvp li label {
+  display: inline-block;
+  background: #fb768b;
+  color: #f9eff1;
+  padding: 2%;
+  border-bottom: 2px solid #f9eff1;
+}
+.kvp li span {
+  display: inline-block;
+  background: #f9eff1;
+  color: #fb768b;
+  padding: 2%;
+  border-bottom: 2px solid #fb768b;
+  align-self: center;
+  flex: flex-grow;
+}
+.kvp li:last-child span{
+  border-bottom: none;
+}
+.kvp li:first-child span{
+  border-top: none;
+}
+footer {
+  padding: 8em 0 2em;
+}
+.txtRight {
+  text-align: right;
+}
+.colorIn {
+  font-size: 4em;
+  width: 3em;
+}
+.colorButton {
+  margin-left: 1em;
+}
+.colorResult {
+  color: #fff;
+  display: block;
+  margin: 5% 0;
+  width: 90%;
+  padding: 5%;
+}
+
+/* modifiers */
+.h1-main 
+{
+  height: 2em;
+}
+
+.map-button{
+  display: none;
+  padding: 30px 50px;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #f0f0f0;
+  margin-right: 40px
+}
