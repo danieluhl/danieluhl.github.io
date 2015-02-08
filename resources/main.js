@@ -32,8 +32,8 @@ $(function(){
   // resize event
   var map = $('#weddingMap');
   function resizeMap() {
-    map.width($win.width() - ($win.width() * .1 + 20));
-    map.height($win.height() - ($win.height() * .33));
+    map.width($win.width() - ($win.width() * .33));
+    map.height($win.height()/2);
   }
   resizeMap();
   var debounceResize = debounce(resizeMap, 200);
