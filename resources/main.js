@@ -39,24 +39,5 @@ $(function(){
   var debounceResize = debounce(resizeMap, 200);
   $win.on('resize', debounceResize);
 
-  
-
-
-  // color clicker thing
-  $doc.on('click', '.colorButton', function(){
-    var text = $('.colorIn').val();
-    var result = '#';
-    for(var i = 0; i < text.length; i++){
-      result = result + text.charCodeAt(i).toString(16);
-    }
-    $('.colorResult').css('background', result).html(result);
-  });
-
-  $('.colorIn').keyup(function(event){
-    if(event.keyCode == 13){
-      $('.colorButton').click();
-    }
-  });
-
 
 });
